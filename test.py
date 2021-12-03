@@ -14,6 +14,9 @@ def testSearch():
 
     actualText = driver.find_elements_by_css_selector('.search_title span')[0].text
     expectedText = 'book'
+    print(actualText)
 
     assert actualText == expectedText, 'Red test'
-    # python -m pytest to test
+    # python -m pytest test.py
+
+# testSearch()
